@@ -1,23 +1,28 @@
 import { Component } from 'react'
 
-/*
+
 class KlasnaKomponenta extends Component{
     constructor(props) {
         super(props)
-        console.log(this)
+        //console.log(this)
     }
   render() {
     return (
         <>
             <h1>KlasnaKomponenta</h1>
+            <p>Ovo je primjer komponente napravljene pomoću
+                ključne riječi 'class'</p>
+            <p>Ovo je primjer jednog propsa u klasnoj komponenti:</p>
             <h2>{this.props.title}</h2>
+            <p>Ovo je primjer drugog propsa u klasnoj komponenti:</p>
+            <h2>{this.props.broj}</h2>
         </>
       )
   }
 }
 
-export default <KlasnaKomponenta></KlasnaKomponenta>
-*/
+export default KlasnaKomponenta
+
 
 
 
@@ -33,7 +38,7 @@ export default <KlasnaKomponenta></KlasnaKomponenta>
 export default KlasnaKomponenta
 */
 
-function KlasnaKomponenta(props) {
+/*export function KlasnaKomponenta(props) {
     return (
         <>
             <h1>KlasnaKomponenta</h1>
@@ -41,4 +46,4 @@ function KlasnaKomponenta(props) {
         </>
       )
   }
-export default KlasnaKomponenta
+  */
