@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import PropTypes from  'prop-types'
 
 
 class KlasnaKomponenta extends Component{
@@ -20,6 +21,12 @@ class KlasnaKomponenta extends Component{
       )
   }
 }
+
+KlasnaKomponenta.propTypes = {
+    title: PropTypes.string,
+    broj: PropTypes.number
+  }
+
 
 export default KlasnaKomponenta
 
