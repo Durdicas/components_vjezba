@@ -1,19 +1,25 @@
 import './App.css'
-import { FunkcijskaKomponentaPrva } from './FunkcijskaKomponenta'
-import { FunkcijskaKomponentaDruga } from './FunkcijskaKomponenta'
-import  KlasnaKomponenta   from './KlasnaKomponenta'
-//import { FunkcijskaKomponentaTreca } from './FunkcijskaKomponenta'
+import { Component } from 'react'
+import { UserClass, FunctionFirst, FunctionSecond } from './user'
 
-function App() {
-  return (
-    <>
-      <FunkcijskaKomponentaPrva/>
-      <FunkcijskaKomponentaDruga title="Funkcijska komponenta" ime="Matej" godine={40}/>
-      <FunkcijskaKomponentaDruga title="Funkcijska komponenta" ime="Ivan" godine={25}>
-        <p>Dodatan opis...</p>
-      </FunkcijskaKomponentaDruga>
-      <KlasnaKomponenta title="Klasna komponenta" broj={5} treci={3}/>
-    </>
-  )
+const users = [
+  {name: 'Ivan', years: 30},
+  {name: 'Marko', years: 35},
+  {name: 'Ana', years: 25},
+];
+
+class App extends Component {
+  render () {
+    return (
+      <>
+      <h1>Zadatak</h1>
+      <UserClass name={users[0].name} years={users[0].years}/>
+      <FunctionFirst name={users[1].name} years={users[1].years}/>
+      <FunctionSecond name={users[2].name} years={users[2].years}>
+        a hobi mi je programiranje...
+      </FunctionSecond>
+      </>
+    )
+  }
 }
 export default App
